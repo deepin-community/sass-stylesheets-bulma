@@ -2,3 +2,12 @@
 
 %:
 	dh $@
+
+override_dh_auto_build:
+	mkdir --parents build/sass build/css
+	cp --recursive --link --force sass build/sass/bulma
+	cp --link --force --target-directory=build/sass bulma*.sass
+	sassc --style expanded --sourcemap --precision 5 build/sass/bulma.sass build/css/bulma.css
+	sassc --style expanded --sourcemap --precision 5 build/sass/bulma-rtl.sass build/css/bulma-rtl.css
+	sassc --style compressed --precision 5 build/sass/bulma.sass build/css/bulma.min.css
+	sassc --style compressed --precision 5 build/sass/bulma-rtl.sass build/css/bulma-rtl.min.css
