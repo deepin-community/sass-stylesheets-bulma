@@ -1,5 +1,36 @@
-template-repository (1.0-1) unstable; urgency=medium
+sass-stylesheets-bulma (0.9.4~ds-1) unstable; urgency=medium
 
-  * Initial release
+  [ upstream ]
+  * new release
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Jonas Smedegaard ]
+  * declare compliance with Debian Policy 4.6.1
+  * unfuzz patches
+  * add debian/patches/README
+    documenting patch versioning micro-policy
+  * update copyright info: update coverage
+  * fix lintian overrides
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sun, 14 Aug 2022 08:03:58 +0200
+
+sass-stylesheets-bulma (0.9.3~ds-1) unstable; urgency=medium
+
+  [ upstream ]
+  * new release
+
+  [ Jonas Smedegaard ]
+  * update copyright info:
+    + use Reference field (not License-Reference);
+      tighten lintian overrides
+    + update coverage
+  * declare compliance with Debian Policy 4.6.0
+  * unfuzz patch
+
+ -- Jonas Smedegaard <dr@jones.dk>  Sat, 18 Sep 2021 16:27:50 +0200
+
+sass-stylesheets-bulma (0.9.2~ds-1) unstable; urgency=low
+
+  * initial release;
+    closes: bug#986489
+
+ -- Jonas Smedegaard <dr@jones.dk>  Tue, 06 Apr 2021 22:48:26 +0200
